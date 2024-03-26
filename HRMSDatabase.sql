@@ -107,17 +107,17 @@ CREATE TABLE IF NOT EXISTS public.job_seeker_cv_educations
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.job_seeker_cv_experiences
-(
-    id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
-    job_seeker_cv_id integer NOT NULL,
-    job_position_id integer NOT NULL,
-    workplace_name character varying(100) NOT NULL,
-    start_date date NOT NULL,
-    quit_date date,
-    created_at timestamp with time zone NOT NULL,
-    PRIMARY KEY (id)
-);
+-- CREATE TABLE IF NOT EXISTS public.job_seeker_cv_experiences
+-- (
+--     id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+--     job_seeker_cv_id integer NOT NULL,
+--     job_position_id integer NOT NULL,
+--     workplace_name character varying(100) NOT NULL,
+--     start_date date NOT NULL,
+--     quit_date date,
+--     created_at timestamp with time zone NOT NULL,
+--     PRIMARY KEY (id)
+-- );
 
 CREATE TABLE IF NOT EXISTS public.job_seeker_cv_images
 (
